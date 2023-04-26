@@ -1,0 +1,5 @@
+ - estrutura para verificar se um programa especifico esta rodando, se nao estiver, iniciar. check a cada 10 segundos.
+ - estrutura para reiniciar o computador, 1x por semana, entre 6 e 9 da manha de terças.
+ - estrutura para verificar se um programa tem novas versoes, consultando por FTP, caso tenha versoes mais novas, comparando pela versao do programa 
+ instalado com a versao que conta no nome do programa, se tiver versoes mais novas no servidor FTP, baixar para o computador local, matar o processo anterior, 
+ e instalar a nova versao. 
