@@ -1,0 +1,4 @@
+process1=Processo1
+path1="C:\Users\executavel1.exe"
+process2=Processo2
+path2="C:\processo2.exe"
