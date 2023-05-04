@@ -14,7 +14,7 @@ export default class Encerrador {
       let latestInstaller = "";
       let latestVersion = "";
       readdirSync(downloadFolder).forEach((file) => {
-        const match = file.match(/^helper-totem Setup (\d+\.\d+\.\d+)\.exe$/i);
+        const match = file.match(/^Setup (\d+\.\d+\.\d+)\.exe$/i);
         if (match) {
           const version = match[1];
           if (version > latestVersion) {
@@ -32,7 +32,7 @@ export default class Encerrador {
         return;
       }
 
-      exec("taskkill /im helper-totem.exe /f", (err, stdout, stderr) => {
+      exec("taskkill /im PROCESSO.exe /f", (err, stdout, stderr) => {
         if (err) {
           console.error(`Erro ao encerrar o processo: ${err.message}`);
           return;
