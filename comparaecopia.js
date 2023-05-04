@@ -12,7 +12,7 @@ export default class Copiador {
       // Caminho para o programa local
       const programPath =
 
-      "C:\\Users\\HELPER\\AppData\\Local\\Programs\\helper-totem\\helper-totem.exe";
+      "C:\\CAMIHO.exe";
 
       const currentFilePath = fileURLToPath(import.meta.url);
       const currentDirPath = dirname(currentFilePath);
@@ -43,7 +43,7 @@ export default class Copiador {
       const list = await client.list();
 
       // Procurando o arquivo
-      const file = list.find((f) => f.name.includes("helper-totem Setup"));
+      const file = list.find((f) => f.name.includes("Setup"));
 
       // Extraindo a versão do arquivo no servidor
       const serverVersion = file.name.match(
